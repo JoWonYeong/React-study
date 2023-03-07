@@ -7,8 +7,27 @@
   box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
   margin-bottom: 1rem;
 }
+
+.avatar {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
 .photo {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+}
+
+.new {
+  position: absolute;
+  left: 73%;
+  top: 10%;
+  padding: 0.2rem 0.5rem;
+  font-weight: bold;
+  background-color: aquamarine;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
 }
