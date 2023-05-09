@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import AppProducts from './AppProducts';
+import AppMentorsReducer from './AppMentorsReducer';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppProducts />
+    <AppMentorsReducer />
   </React.StrictMode>
 );
 
