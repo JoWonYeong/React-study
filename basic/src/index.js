@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import AppMentorsReducer from './AppMentorsReducer';
+// import AppMentorsReducer from './AppMentorsReducer';
+import AppMentorsImmer from './AppMentorsImmer';
+
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppMentorsReducer />
+    {/* <AppMentorsReducer /> */}
+    <AppMentorsImmer />
   </React.StrictMode>
 );
 
