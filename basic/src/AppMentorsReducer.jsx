@@ -20,6 +20,7 @@ export default function AppMentor(props) {
     dispatch({ type: 'added', name, title });
   };
 
+  // 멘토 삭제하기
   const handleDelete = () => {
     const name = prompt('삭제할 멘토의 이름을 입력해주세요');
 

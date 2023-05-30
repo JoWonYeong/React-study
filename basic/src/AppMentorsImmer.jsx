@@ -25,12 +25,20 @@ export default function AppMentor(props) {
     });
   };
 
+  // 멘토 삭제하기
   const handleDelete = () => {
     const name = prompt('삭제할 멘토의 이름을 입력해주세요');
     updatePerson((prevPerson) => {
-      // const index = person.mentors.findIndex((m) => m.name === name);
-      const index = person.mentors.findIndex((m) => m.name === name);
+      // 방법 1
+      // const index = prevPerson.mentors.findIndex((m) => m.name === name);
+      const index = prevPerson.mentors.findIndex((m) => m.name === name);
       prevPerson.mentors.splice(index, 1);
+
+      // 방법 2
+      /*
+      const deletedMentors = prevPerson.mentors.filter((v) => v.name !== name);
+      prevPerson.mentors = deletedMentors;
+      */
     });
   };
 

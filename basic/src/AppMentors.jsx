@@ -38,6 +38,7 @@ export default function AppMentor(props) {
     }));
   };
 
+  // 멘토 삭제하기
   const handleDelete = () => {
     const name = prompt('삭제할 멘토의 이름을 입력해주세요');
     setPerson((prevPerson) => ({
