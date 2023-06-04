@@ -28,3 +28,9 @@
 ## AppMentorsImmer.jsx
 
 - AppMentor.jsx에서 state 사용한 것 Immer 라이브러리 활용해 변경
+
+# 📌Uncontrolled component : 통제되지 않는 컴포넌트
+
+## AppForm.jsx
+
+- Uncontrolled component인 `<form>`을 React 원칙에 맞춰서 사용하기

@@ -15,7 +15,10 @@ export default function AppForm() {
   };
 
   const handleChange = (e) => {
+    // event 발생한 target에 name, value 받아옴
+    // 구조분해할당으로 넣으면 변수명과 속성값이 일치하는 값 변수에 들어감
     const { name, value } = e.target;
+    // 기존값 유지, 입력받은 새로운 값 덮어쓰기로 변경
     setForm({ ...form, [name]: value });
   };
 
@@ -43,7 +46,7 @@ export default function AppForm() {
 }
 
 // uncontrolled component : 통제되지 않는 컴포넌트
-// - 리액트는 상태의 변경이 있을 때 UI변경 일어나야함
-// - 하지만 <form> 의 <input> 같은 경우, 리액트의 상태변경이 이루어지지 않아도 UI상으로 입력된게 보여짐
+// - 리액트 원칙 : 모든 UI 업데이트는 상태의 변경이 있을 때 발생
+// - 하지만 <form> 의 <input> 같은 경우, 입력이 발생했을 때 리액트의 상태변경이 이루어지지 않아도 UI상으로 입력된게 보여짐
 // - 이런 uncontrolled component는 리액트에서 추구하는 원칙과 어긋남
 // - state 설정해서 <input>에 바로바로 상태 업데이트 하게 해줘야함
