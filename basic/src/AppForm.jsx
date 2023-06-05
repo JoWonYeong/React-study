@@ -1,3 +1,9 @@
+// uncontrolled component : 통제되지 않는 컴포넌트
+// - 리액트 원칙 : 모든 UI 업데이트는 상태의 변경이 있을 때 발생
+// - 하지만 <form> 의 <input> 같은 경우, 입력이 발생했을 때 리액트의 상태변경이 이루어지지 않아도 UI상으로 입력된게 보여짐
+// - 이런 uncontrolled component는 리액트에서 추구하는 원칙과 어긋남
+// - state 설정해서 <input>에 바로바로 상태 업데이트 하게 해줘야함
+
 import React, { useState } from 'react';
 
 export default function AppForm() {
@@ -44,9 +50,3 @@ export default function AppForm() {
     </form>
   );
 }
-
-// uncontrolled component : 통제되지 않는 컴포넌트
-// - 리액트 원칙 : 모든 UI 업데이트는 상태의 변경이 있을 때 발생
-// - 하지만 <form> 의 <input> 같은 경우, 입력이 발생했을 때 리액트의 상태변경이 이루어지지 않아도 UI상으로 입력된게 보여짐
-// - 이런 uncontrolled component는 리액트에서 추구하는 원칙과 어긋남
-// - state 설정해서 <input>에 바로바로 상태 업데이트 하게 해줘야함
