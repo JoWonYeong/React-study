@@ -5,7 +5,9 @@ import ReactDOM from 'react-dom/client';
 // import AppMentors from './AppMentors'
 // import AppMentorsReducer from './AppMentorsReducer';
 // import AppMentorsImmer from './AppMentorsImmer';
-import AppForm from './AppForm';
+// import AppForm from './AppForm';
+// import AppWrap from './AppWrap';
+import AppCard from './AppCard';
 
 import './index.css';
 import reportWebVitals from './reportWebVitals';
@@ -13,7 +15,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppForm />
+    <AppCard />
   </React.StrictMode>
 );
 
