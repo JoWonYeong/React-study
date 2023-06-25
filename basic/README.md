@@ -15,7 +15,7 @@
 
 ## 📌Reducer
 
-### AppMentorsReducer.jsx
+### reducer/AppMentorsReducer.jsx
 
 - AppMentor.jsx에서 state 사용한 것 Reducer 활용해 변경
 
@@ -25,7 +25,7 @@
 
 ## 📌Immer
 
-### AppMentorsImmer.jsx
+### Immer/AppMentorsImmer.jsx
 
 - AppMentor.jsx에서 state 사용한 것 Immer 라이브러리 활용해 변경
 
