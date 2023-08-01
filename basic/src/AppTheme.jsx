@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
 import './AppTheme.css';
-import { DarkModeProvider } from './context/DarkModeContext';
+import { DarkModeContext, DarkModeProvider } from './context/DarkModeContext';
 
 export default function AppTheme() {
   return (
     // 원하는 하위 컴포넌트에 우산 씌어주기
+    // 다크모드의 경우 최상위 컴포넌트에 영향 줌
     <DarkModeProvider>
       <Header />
       <Main />
@@ -44,8 +45,27 @@ function Products() {
   return (
     <div>
       Products
-      <p>DarkMode: </p>
-      <button>Toggle</button>
+      <ProductDetail />
+    </div>
+  );
+}
+
+function ProductDetail() {
+  // 전역으로 사용하는 다크모드 context를 useContext() 통해 가져와서 사용
+  const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
+  return (
+    <div>
+      <p>
+        DarkMode:
+        {darkMode ? (
+          <span style={{ backgroundColor: 'black', color: 'white' }}>
+            Dark Mode
+          </span>
+        ) : (
+          <span>Light Mode</span>
+        )}
+      </p>
+      <button onClick={toggleDarkMode}>Toggle</button>
     </div>
   );
 }

@@ -42,3 +42,10 @@
 ### AppCard.jsx
 
 - 상위컴포넌트가 하위 컴포넌트를 감싸는 방법으로 효율적인 컴포넌트 재사용
+
+## 📌Context API
+
+### context/DarkModeContext.jsx, AppTheme.jsx
+
+- Context API를 사용해 전역으로 상태 관리하기
+- DarkModeContext.jsx에서 다크모드를 관리하는 context와 우산을 씌울 Provider 컴포넌트를 만들어서 AppTheme.jsx에 적용
