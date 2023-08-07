@@ -76,3 +76,7 @@
 ```
 useMemo((...)=>fn, deps) === useCallback(fn, deps)
 ```
+
+## 📌 custom hook
+### hooks/use-products.jsx, components/Products.jsx
+- loading, error 등 여러 컴포넌트에서 공통으로 사용되는 로직 custom hook 사용해 재사용
