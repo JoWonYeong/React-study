@@ -37,9 +37,7 @@
 
 ## 📌Component Wrapping : 컴포넌트의 재사용 방법
 
-### AppWrap.jsx
-
-### AppCard.jsx
+### AppWrap.jsx, AppCard.jsx
 
 - 상위컴포넌트가 하위 컴포넌트를 감싸는 방법으로 효율적인 컴포넌트 재사용
 
@@ -78,5 +76,5 @@ useMemo((...)=>fn, deps) === useCallback(fn, deps)
 ```
 
 ## 📌 custom hook
-### hooks/use-products.jsx, components/Products.jsx
+### hooks/use-products.jsx, basic/components/Products.jsx
 - loading, error 등 여러 컴포넌트에서 공통으로 사용되는 로직 custom hook 사용해 재사용
