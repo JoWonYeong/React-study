@@ -1,0 +1,7 @@
+.container{
+  display: flex;
+}
+
+.product{
+  box-shadow: inset 0px 0px 0px 2px lightcoral;
+}
