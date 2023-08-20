@@ -20,12 +20,10 @@ export default function Products({id}) {
     // useQuery() 사용한 경우 'fetching...' 한번 찍힘
     console.log('fetching in useQuery...', checked);
     return fetch(`data/${checked?'sale_':''}products.json`).then((res) => res.json());
-  }, 
-  {
+  }, {
     // options 추가
     staleTime: 1000 * 60 * 5, 
-  }
-  );
+  });
   const handleChange = () => setChecked((prev) => !prev);
 
   // 로딩 시 리턴

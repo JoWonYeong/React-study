@@ -24,9 +24,9 @@ export default function MainProducts() {
       <button onClick={()=>{
         // 버튼 누르면 바로 서버에 정보가 업데이트 되고, key에 해당하는 캐시 수동적으로 invalidate(새로고침)돼서 업데이트
         // checked 값 false만 invalidate
-        client.invalidateQueries(['products', false]);
+        // client.invalidateQueries(['products', false]);
         // 첫번째 key 값으로 'products' 가지는 모든 캐시 invalidate
-        // client.invalidateQueries(['products']);
+        client.invalidateQueries(['products']);
       }}>정보가 업데이트 되었음!</button>
     </main>
   );
